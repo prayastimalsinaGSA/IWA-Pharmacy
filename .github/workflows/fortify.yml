@@ -59,7 +59,7 @@ jobs:
         env:
           ### Required configuration when integrating with Fortify on Demand
           FOD_URL: https://fed.fortifygov.com
-          FOD_TENANT: ${{secrets.FOD_TENANT}}
+          # FOD_TENANT: ${{vars.FOD_TENANT}}
           FOD_CLIENT_ID: ${{secrets.FOD_CLIENT_ID}}
           FOD_CLIENT_SECRET: ${{secrets.FOD_CLIENT_SECRET}}
           ### Optional configuration when integrating with Fortify on Demand
