@@ -59,9 +59,11 @@ jobs:
         env:
           ### Required configuration when integrating with Fortify on Demand
           FOD_URL: https://fed.fortifygov.com
-          # FOD_TENANT: ${{vars.FOD_TENANT}}
-          FOD_CLIENT_ID: ${{secrets.FOD_CLIENT_ID}}
-          FOD_CLIENT_SECRET: ${{secrets.FOD_CLIENT_SECRET}}
+          FOD_TENANT: ${{secrets.FOD_TENANT}}
+          FOD_PAT: ${{secrets.FOD_PAT}}
+          FOD_USER: ${{secrets.FOD_USER}}
+          #FOD_CLIENT_ID: ${{secrets.FOD_CLIENT_ID}}
+          #FOD_CLIENT_SECRET: ${{secrets.FOD_CLIENT_SECRET}}
           ### Optional configuration when integrating with Fortify on Demand
           EXTRA_PACKAGE_OPTS: -oss                       # Extra 'scancentral package' options, like '-oss'' if
                                                            # Debricked SCA scan is enabled on Fortify on Demand
